@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <style>
+        .picture-p{
+            margin-top: 100px;
+            margin-bottom: 90px;
+        }
+        .profile{
+            margin-bottom: 100px;
+        }
+        button{
+            display: block;
+            margin: 20px;
+            border: none;
+            background-color: transparent;
+        }
+        p{
+            display: inline;
+        }
+        label{
+            display: block;
+        }
+        .input-profil input{
+            margin-bottom: 22px;
+            display: block;
+        }
+        .judul label{
+            margin-bottom: 28px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+          <img src="../img/logo.png" alt="logo" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item ml-2">
+                <input
+                  class="form-control mr-2 input"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+              </li>
+              <li class="nav-item ml-2">
+                <a href="" data-toggle="modal" data-target="#exampleModal">
+                  <img
+                    class="mr-4"
+                    src="../img/filter.png"
+                    alt="filter"
+                  />
+                </a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <img class="mr-4" src="../img/shopping-cart (2) 1nav.svg" alt="cart" />
+              <img class="mr-4" src="../img/bell (1) 1nav.svg" alt="bell" />
+              <img class="mr-4" src="../img/mail (3) 1nav.svg" alt="mail" />
+              <img class="mr-4" src="../img/Mask Groupnav.svg" alt="mail" />
+  
+            </form>
+          </div>
+        </nav>
+    </header>
+    <main>
+        <section class="mt-5">
+            <div class="container ml-4">
+                <div class="row d-flex picture-p">
+                    <div class="col-6 d-inline">
+                        <div class="profile ">
+                            <img src="../img/Mask Groupnav.svg" alt="picture-profile" width="60px">
+                            <p>Taryana</p>
+                        <span>Ubah profile</span>
+                        </div>
+                        <button>
+                           <img src="../img/logoAccount.svg" alt="account">
+                        <p class="font-weight-bold text-dark">My account</p> 
+                        </button>
+                        <button>
+                            <img src="../img/addressIcon.svg" alt="IconAddress">
+                        <p>Shipping Address</p>
+                        </button>
+                        <button>
+                            <img src="../img/orderIcon.svg" alt="IconOrder">
+                            <p>My Order</p>
+                        </button>
+                        
+                    </div>
+                    <div class="col-6">
+                        <div class="detail-profile">
+                            <p>My Profile</p>
+                            <p>Manage Your Profile Informasition</p>
+                            <hr>
+                            <form>
+                                <div class="form-group row">
+                                    <label for="name" class="col-sm-2 col-form-label">Name</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="name" placeholder="Name">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="staticEmail" placeholder="Email">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="number" class="col-sm-2 col-form-label">Phone Number</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="number" placeholder="Email">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="gender" class="col-sm-2 col-form-label">Gender</label>
+                                    <div class="col-sm-10 d-felx">
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">laki-laki</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">Perempuan</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="gender" class="col-sm-2 col-form-label">Date of birth</label>
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                          Dropdown
+                                        </button>
+                                        <div class="dropdown-menu">
+                                          <button class="dropdown-item" type="button">Action</button>
+                                          <button class="dropdown-item" type="button">Another action</button>
+                                          <button class="dropdown-item" type="button">Something else here</button>
+                                        </div>
+                                      </div>
+                                  </div>
+                              </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+      <script src="./assets/js/jquery.slim.min.js"></script>
+      <script src="./assets/js/bootstrap.bundle.min.js"></script>
+      <script src="https://kit.fontawesome.com/969e1fc109.js" crossorigin="anonymous"></script>
+</body>
+</html>

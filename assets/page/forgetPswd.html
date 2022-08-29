@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../style/index.css">
+  <link rel="stylesheet" href="../style/resetPswd.css">
+</head>
+<body >
+    <div class="container">
+        <div class="content ">
+        <img src="/assets/img/logo.png" alt="Logo">
+        <div class="reset " role="tabpanel" id="reset">
+                <p class="text-center font-weight-bold text-dark py-3">Reset Password</p>
+                <form>
+                    <div class="form-input">
+                        <input type="email" placeholder="Email" class="form-control" required>
+                    </div>
+                    <div class="form-input">
+                        <a href="" class="text-success float-right py-3">Forget Password?</a>
+                        <button class="btn btn-success btn-block rounded-pill btn-reset">SUBMIT</button>
+                    </div>
+                </form>
+                <p class="text-center">Don't have a Tokopedia account? <a href="./signup.html">Register</a></p>
+            </div>
+            <div class="config mt-4 active" id="config">
+                <p class="text-center font-weight-bold text-dark py-3">Reset Password</p>
+                <p class="text-danger text-center ">You need to change your password to activate your account</p>
+                <form>
+                    <div class="form-input">
+                        <input type="password" class="form-control my-3" placeholder="Password">
+                    </div>
+                    <div class="form-input">
+                        <input type="password" class="form-control" placeholder="Confirmation New Password">
+                    </div>
+                    <div class="form-input">
+                        <a href="" class="text-success float-right mb-3">Forget Password?</a>
+                        <button class="btn btn-success btn-block rounded-pill" ><a href="#"onclick="removeClass()" >SUBMIT</a></button>
+                    </div>
+                </form>
+                <p class="text-center my-3">Don't have a Tokopedia account? <a href="./signup.html">Register</a></p>
+            </div>
+            <div class="login active">
+                <p class="text-login text-center font-weight-bold text-dark py-3">Please login with your account</p>
+                <p class="text-comment">We have sent an email containing a password reset instruction to your email. please check your email.
+                </p>
+                <form>
+                    <div class="form-input">
+                        <input type="email" placeholder="Email" class="form-control mb-2 mt-5">
+                    </div>
+                    <div class="form-input">
+                        <input type="password" placeholder="password" class="form-control">
+                    </div>
+                    <div class="form-input">
+                        <a href="./forgetPswd.html" class="float-right pb-3">Forget password?</a>
+                        <button class="btn btn-success rounded-pill "><a href="../../index.html">Login</a></button>
+                    </div>
+                </form>
+            </div>
+            <div class="change active">
+                <p class="text-center my-4 text">Request to Reset Your Account Password</p>
+                <div>
+                    <img src="/assets/img/Lock.png" class="lock" alt="Lock">
+                </div>
+                <p class="my-5 text-center text1">The following is the button for you to reset the password.</p>
+                <div class="text-center">
+                    <button class="btn btn-success rounded-pill w-50 changeBtn" onclick="removeClassChange()">Change password</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const reset = document.querySelector(".reset");
+        const btn = document.querySelector(".btn-reset");
+        const config = document.querySelector(".config")
+        const login = document.querySelector(".login")
+        const change = document.querySelector(".changeBtn")
+        const lock = document.querySelector('.change')
+        btn.addEventListener('click', function(){
+            reset.classList.add('active')
+            lock.classList.remove('active')
+
+        })
+        function removeClass(){
+            login.classList.remove('active')
+            config.classList.add('active')
+        }
+        function removeClassChange(){
+            config.classList.remove("active")
+            lock.classList.add("active")
+        }
+    </script>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

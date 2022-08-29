@@ -1,0 +1,53 @@
+.col ul li{
+    display: inline;
+}
+.colors ul{
+    margin-left: -50px;
+    margin-top: -15px;
+}
+.price{
+    margin-top: -15px;
+}
+#img-preview{
+    border-radius: 10px;
+}
+.btn-plus{
+font-size: 20px;
+font-weight: 600;
+background-color: transparent;
+border-radius: 30px;
+width: 40px;
+height: 40px;
+line-height: 6px;
+padding-bottom: 15px;
+border: 1px solid transparent;
+}
+.btn-min{
+    font-size: 20px;
+    font-weight: 600;
+    background-color: grey;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    line-height: 6px;
+    padding-bottom: 15px;
+    border: 1px solid transparent;
+    margin-right: 10px;
+}
+.jumlah{
+    /* untuk tampilan hp */
+    /* margin-top: -81px;
+    margin-right: 250px; */
+    margin-top: -81px;
+    margin-right: 90px;
+}
+.thumb{
+    margin-top: 0;
+}
+.colorsBtn{
+  border: 1px solid transparent;
+}
+.active-thumb{
+  opacity: .5;
+  border: 2px solid black;
+}

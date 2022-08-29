@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/mybag.css">
+    <title>My bag</title>
+    <style>
+  
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+            <a href="../../index.html"><img src="../img/logo.svg" alt="logo" /></a>
+            <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-3 mt-2 ">
+                <li class="nav-item ml-2">
+                  <input class=" fas fa-search form-control mr-2 input " style="font-family: 'Metropolis', sans-serif; font-weight: 500;" type="input" placeholder="Search" aria-label="Search"/>
+                  <i class="fas fa-search"></i>
+                  <button type="button" class="btn filterBtn float-right" data-toggle="modal" data-target="#staticBackdrop">
+                    <!-- <img src="/assets/img/filter.png" alt="filter"> -->
+                    <i class="fas fa-filter"></i>
+                  </button>
+                </li>
+              </ul>
+            
+              <form class="form-inline my-2 my-lg-0 btn-loginUp">
+                <a href="../page/myBag.html"><img class="mr-4" src="../img/shopping-cart.svg" alt="cart" /></a>
+                <img class="mr-4" src="../img/bell.svg" alt="bell" />
+                <img class="mr-4" src="../img/mail.svg" alt="mail" />
+                <img class="mr-4" src="../img/icon-profile.svg" alt="icon-profile" />
+    
+              </form>
+            
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="container">
+            <div class="modal fade mt-5" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog ">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p class="text-filter">Filter</p>
+                  </div>
+                  <div class="modal-body">
+                    <p>Colors</p>
+                    <ul>
+                      <li>
+                        <button class="colorBtn B1" ><div class="color"></div></button>
+                      </li>
+                      <li>
+                        <button class="colorBtn B2"><div class="color bg-white"></div></button>
+                      </li>
+                      <li>
+                        <button class="colorBtn B3"><div class="color bg-danger"></div></button>
+                      </li>
+                      <li>
+                        <button class="colorBtn B4"><div class="color bg-primary"></div></button>
+                      </li>
+                      <li>
+                        <button class="colorBtn B5"><div class="color"></div></button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="modal-body">
+                    <h2>Sizes</h2>
+                    <ul>
+                      <li>
+                        <button class="btn1 ">XS</button>
+                      </li>
+                      <li>
+                        <button class="btn2 ">S</button>
+                      </li>
+                      <li>
+                        <button class="btn3 ">M</button>
+                      </li>
+                      <li>
+                        <button class="btn4 ">L</button>
+                      </li>
+                      <li>
+                        <button class="btn5 ">XL</button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="modal-body">
+                    <h2>Category</h2>
+                    <ul>
+                      <li>
+                        <button class="col-3 " id="btn6">All</button>
+                      </li>
+                      <li>
+                        <button class="col-3 " id="btn7">Women</button>
+                      </li>
+                      <li>
+                        <button class="col-3 " id="btn8">Men</button>
+                      </li>
+                      <li>
+                        <button class="col-3 mt-1 " id="btn9">Boys</button>
+                      </li>
+                      <li>
+                        <button class="col-3 mt-1 " id="btn10">Girls</button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="modal-body">
+                    <h2>Brand</h2>
+                    <p>adidas Originals, Jack & Jones, s.Oliver</p>
+                  </div>
+                  <footer>
+                    <div class="p-5 text-center">
+                      <button class="mr-5 rounded-pill mr-auto btn-Discard" class="close" data-dismiss="modal" aria-label="Close">Discard</button>
+                      <button class="mr-5 bg-success rounded-pill btn-Apply" class="close" data-dismiss="modal" aria-label="Close">Apply</button>
+                  </div>
+                  </footer>
+                </div>
+              </div>
+            </div>
+        <div class="containers container">
+            <h1>My bag</h1>
+            <sections class="content">
+                <div class="list-product float-left ">
+                    <input type="checkbox" class="checkbox bg-danger">
+                    <p class="d-inline">Select all items <span>(2 items selected)</span>
+                    <a class="text-danger float-right mr-2 text-decoration-none">Delete</a>
+                    </p>
+                </div>
+                <div class="buy float-right">
+                    <p class="shopping">Shopping summary</p>
+                    <p class="text-muted">Total price <span class="text-dark float-right price">$ 40.0</span></p>
+                    <a href="./checkout.html"><button class="btn btn-success rounded-pill btnBuy">Buy</button></a>
+                </div>
+            </sections>
+            <section class="">
+                <div class="product d-flex ">
+                    <input type="checkbox">
+                    <img src="/assets/img/Clothe.svg" alt="" class="ml-3" width="100px" height="70px">
+                    <div class="my-2 ml-2 title">
+                      <strong>Men's formal suit - Black</strong>
+                      <p class="text-brand my-1 ml-1">Zalora Cloth</p>
+                    </div>
+                    <div class="d-inline btn-product justify-content-end">
+                        <button class="btn btn-min" onclick="min()">-</button>
+                        <span class="font-weight-bold text-dark" id="jumlah">1</span>
+                        <button class="btn btn-plus" onclick="plus()">+</button>
+                        <span class="text-dark font-weight-bold">$ 20.0</span>
+                    </div>
+                </div>
+                <div class="product d-flex my-3">
+                    <input type="checkbox">
+                    <img src="/assets/img/jaket-Pria.svg" alt="" class="ml-3" width="100px" height="70px">
+                    <div class="my-2 ml-2 title">
+                      <strong>Men's formal suit - Black</strong>
+                      <p class="text-brand my-1 ml-1">Zalora Cloth</p>
+                    </div>
+                    <div class="d-inline btn-product justify-content-end">
+                        <button class="btn btn-min" onclick="min1()">-</button>
+                        <span class="font-weight-bold text-dark" id="jumlah1">1</span>
+                        <button class="btn btn-plus" onclick="plus1()">+</button>
+                        <span class="text-dark font-weight-bold">$ 20.0</span>
+                    </div>
+                </div>
+                
+               
+            </section>
+            
+        </sections>
+        </main>
+
+        <script>
+            const jumlah = document.querySelector('#jumlah')
+            const jumlah1 = document.querySelector('#jumlah1')
+            let counter = 1
+            function min() {
+            if (counter > 1) {
+                counter--;
+                jumlah.innerHTML = counter;
+            }
+            }
+
+            function plus() {
+            counter++;
+            jumlah.innerHTML = counter;
+            }
+            function min1() {
+            if (counter > 1) {
+                counter--;
+                jumlah1.innerHTML = counter;
+            }
+            }
+
+            function plus1() {
+            counter++;
+            jumlah1.innerHTML = counter;
+            }
+        </script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/969e1fc109.js" crossorigin="anonymous"></script>
+</body>
+</html>

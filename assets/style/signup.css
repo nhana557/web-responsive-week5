@@ -1,0 +1,41 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/metropolis.min.css");
+
+
+body{
+    font-family: 'Metropolis', sans-serif;
+}
+.btn-success{
+    background-color: #32C33B;
+    width: 100%;
+}
+.text-regis {
+  text-align: center;
+  padding-top: 1em;
+}
+.container{
+  max-width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #32C33B;
+}
+.nav-pills .nav-link {
+  width: 100px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+a:link,
+a:visited {
+  text-decoration: none !important;
+  color: white;
+  cursor: pointer !important;
+}
